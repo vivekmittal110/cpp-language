@@ -8,17 +8,25 @@ int main()
     cin >> num;
     int a = num;
     int dec = 0, n;
-    n = a % 10;
-    dec = dec + n;
-    a /= 10;
     int pow = 1;
     for (int i = 1; a > 0; i++)
     {
         n = a % 10;
+        dec += (n * pow);
         pow = pow * 2;
-        dec += n * pow;
         a /= 10;
     }
+
+    // another method
+
+    // int pow = 1;
+    // int dec = 0;
+    // while(num>0){
+    //     int last_digit = num%10;
+    //     dec += last_digit * pow;
+    //     pow *= 2;
+    //     num /= 10;
+    // }
     cout << dec;
     return 0;
 }
