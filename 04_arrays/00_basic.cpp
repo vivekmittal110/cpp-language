@@ -7,3 +7,7 @@
 // data_type array_name[array_size]
 // int arr[5];  // giving size is important
 // int arr[] = {1,2,3,4,5}; // giving size not mendatory
+
+// Array type
+// one dimensional 
+// multidimentional array
